@@ -7,16 +7,28 @@
 
     <script>
         var i = 20;
-        
+
         function updateCount() {
             i = i - 1; // single "=" means assignment (":=") 
+            document.body.style.backgroundColor = "FF0000";
 
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
+        
+           
+            if (i == i - 1) {
+                document.body.style.backgroundColor = "FFF5F5";
+            }
+            if (i == i - 2) {
+                document.body.style.backgroundColor = "FFEBEB";
+            }
+            if (i == i - 3) {
+                document.body.style.backgroundColor = "FFE1E1";
+            }
+                
 
             if (i <= 0) { // double "==" is equality comparison
-                document.body.style.backgroundColor ="#FF4F6E";
                 countobj.innerHTML = "<b><font size='+5'><font color='FFC0CB'>HAPPY BIRTHDAY!</b>";
             }
         }
