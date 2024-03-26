@@ -1,9 +1,13 @@
 <html>
 <body>
     <h1>Exploring the DOM</h1>
-    
+   
+    <h2>Count Down: <span id="count">20</span></h2>
+    <button onclick="updateCount()">Next</button>
 
     <script>
+        var i = 20;
+        
         function updateCount() {
             i = i - 1; // single "=" means assignment (":=") 
 
@@ -18,8 +22,7 @@
         }
     </script>
 
-    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
-    <button onclick="updateCount()">Next</button>
     
+
 </body>
 </html>
