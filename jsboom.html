@@ -12,20 +12,10 @@
             countobj.innerHTML = "<b>" + i + "</b>";
 
             if (i <= 0) { // double "==" is equality comparison
-                countobj.innerHTML = "<b><font size='+5'>HAPPY BIRTHDAY!</b>";
+                document.body.style.backgroundColor ="#FF4F6E";
+                countobj.innerHTML = "<b><font size='+5'><font color='FFC0CB'>HAPPY BIRTHDAY!</b>";
             }
-
         }
     </script>
-
-    <script>
-        var i = 5;
-        document.body.style.backgroundColor ="#FF4F6E";
-    </script>
-
-    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
-    <button onclick="updateCount()">Next</button>
-    
-
 </body>
 </html>
