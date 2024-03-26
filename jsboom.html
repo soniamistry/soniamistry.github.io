@@ -2,22 +2,27 @@
 <body>
     <h1>Exploring the DOM</h1>
 
-    <h2>Count Down: <span id="count">20</span></h2>
-    <button onclick="updateCount()">Next</button>
-
     <script>
-        var i = 20;
-
         function updateCount() {
-            i = i - 1;
+            i = i - 1; // single "=" means assignment (":=") 
+
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
-        
-        if (i<=0) {
-            countobj.innerHTML = "<b><font size='+5'><font color='FFC0CB'>HAPPY BIRTHDAY!</b>";
-        }
+
+            if (i <= 0) { // double "==" is equality comparison
+                countobj.innerHTML = "<b><font size='+5'>HAPPY BIRTHDAY!</b>";
+            }
+
         }
     </script>
-</body>  
+
+    <script>
+        var i = 5;
+    </script>
+
+    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
+    <button onclick="updateCount()">Next</button>
+
+</body>
 </html>
