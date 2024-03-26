@@ -6,14 +6,14 @@
     <h1>Wanna Hear a Joke?</h1>
    
     <!-- Button to trigger the addition of text -->
-    <button id="joke">You know you want to</button>
+    <button onclick="joke">You know you want to</button>
     
     <!-- Container to display additional text -->
     <div id="textContainer"></div>
 
     <script>
         // Function to handle the click event of the button
-        document.getElementById("addjoke").addEventListener("click", function() {
+        document.getElementById(joke).addEventListener(click, function() {
             // Get the text container element
             var textContainer = document.getElementById("textContainer");
             
