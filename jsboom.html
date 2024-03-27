@@ -2,7 +2,10 @@
     <title>Exploring the DOM</title>
 </head>
 <body>
-    <h1>Wanna Hear a Joke?</h1>
+    <h1>Exploring the DOM</h1>
+
+    <h2>Count Down: <span id="count">20</span></h2>
+   <button onclick="updateCount()">Next</button>
    
     <!-- Button to trigger the addition of text -->
     <button id="jokeButton">You know you want to</button>
@@ -25,6 +28,23 @@
             // Append the paragraph to the text container
             textContainer.appendChild(newParagraph);
         });
+
+        var i = 20;
+      
+       function updateCount() {
+           i = i - 1; // single "=" means assignment (":=")
+
+
+           countobj = document.getElementById("count");
+           console.log("Updating i: " + i);
+           countobj.innerHTML = "<b>" + i + "</b>";
+
+
+           if (i <= 0) { // double "==" is equality comparison
+               document.body.style.backgroundColor ="#FF4F6E";
+               countobj.innerHTML = "<b><font size='+5'><font color='FFC0CB'>HAPPY BIRTHDAY!</b>";
+           }
+       }
     </script>
 </body>
 </html>
