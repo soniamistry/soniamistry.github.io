@@ -6,16 +6,26 @@
 <body style="font-family: Times New Roman; font-size: x-large; margin-left: 10%; margin-right: 10%; background-color: #B8091E">
 
   <h1 align="center"> <font color="#FFFFFF"> Some More Photos!!!!</h1>
-    <button id="Next">Next</button>
+    <button id="changeImg">Next</button>
 
-    <img id="cimage" height="600" src="" alt="Image Changes">
+    <img name= "carousel" width= "400" height= "200">
 
 <script>
-var carouselImage = document.getElementById("cimage");
-    carouselImage.src = [ryman.jpeg, wildhorse.jpeg, broadway.jpeg]
 
-    document.getElementById("Next").addEventListener("click", 
-    function(carouselImage) {
-        images = [ryman.jpeg,wildhorse.jpeg, broadway.jpeg]
-    })
+var i = 0 //start point
+var images = []
+
+//image list
+images[0] = 'ryman.jpeg'
+images[1] = 'wildhorse.jpeg'
+images[2] = 'broadway.jpeg'
+
+//change image
+function changeImg(){
+    document.carousel.src = images[i]
+
+}
+
 </script> 
+
+</html>
