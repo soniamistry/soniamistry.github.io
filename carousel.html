@@ -6,27 +6,25 @@
 <body style="font-family: Times New Roman; font-size: x-large; margin-left: 10%; margin-right: 10%; background-color: #B8091E">
 
   <h1 align="center"> <font color="#FFFFFF"> Some More Photos!!!!</h1>
-    <button id="changeImg">Next</button>
-  
-
-    <img name= "carousel" width= "400" height= "200">
+    <button id="changeImg" onclick="changeImg()">Next</button>
+    <img id="carousel" width="400" height="200">
 
 <script>
-
-var i = 0 //start point
-var images = []
+var i = 0; //start point
+var images = [];
 
 //image list
-images[0] = 'https://soniamistry.github.io/ryman.jpeg'
-images[1] = 'https://soniamistry.github.io/broadway.jpeg'
-images[2] = 'https://soniamistry.github.io/wildhorse.jpeg'
+images[0] = 'https://soniamistry.github.io/ryman.jpeg';
+images[1] = 'https://soniamistry.github.io/broadway.jpeg';
+images[2] = 'https://soniamistry.github.io/wildhorse.jpeg';
 
 //change image
 function changeImg(){
-  document.carousel.src = images[i]
+  // Increment index
+  i = (i + 1) % images.length;
+  document.getElementById("carousel").src = images[i];
 }
-
-
 </script> 
 
+</body>
 </html>
