@@ -18,13 +18,17 @@ Here are some of my favorite spots in the, <b>coolest city ever
 
   <!-- Button to trigger the addition of text -->
   <button id="musicButton">Music</button>
-    
   <!-- Container to display additional text -->
   <div id="musicContainer"></div>
 
+   <!-- Button to trigger the addition of text -->
+   <button id="foodButton">Food</button>
+   <!-- Container to display additional text -->
+   <div id="foodContainer"></div>
+
 <script>
 
-// Function to handle the click event of the button
+// MUSIC Function to handle the click event of the button
 document.getElementById("musicButton").addEventListener("click", function() {
             // Get the text container element
             var textContainer = document.getElementById("musicContainer");
@@ -38,7 +42,20 @@ document.getElementById("musicButton").addEventListener("click", function() {
             // Append the paragraph to the text container
             textContainer.appendChild(newParagraph);
         });
-
+// FOOD Function to handle the click event of the button
+document.getElementById("foodButton").addEventListener("click", function() {
+            // Get the text container element
+            var textContainer = document.getElementById("foodContainer");
+            
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+            
+            // Add text content to the paragraph
+            newParagraph.textContent = "Go to Hattie B's for Nashville's famous Hot Chicken! A personal favorite of mine is The Assembly Food Hall, which is essentially a glorified food court full of Nashville's BEST local cuisine!";
+            
+            // Append the paragraph to the text container
+            textContainer.appendChild(newParagraph);
+        });
 
 
 
