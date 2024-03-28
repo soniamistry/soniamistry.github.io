@@ -14,6 +14,8 @@ Here are some of my favorite spots in the, <b>coolest city ever
 
   <center> 
     <a href="https://soniamistry.github.io/bestplaces.html">   <font color="#FFFFFF">Click here to learn more!!</a>
+     
+      <p align="center">Hit the buttons to learn even more! </p>
   </center> 
 
   <!-- Button to trigger the addition of text -->
@@ -25,6 +27,11 @@ Here are some of my favorite spots in the, <b>coolest city ever
    <button id="foodButton">Food</button>
    <!-- Container to display additional text -->
    <div id="foodContainer"></div>
+
+     <!-- Button to trigger the addition of text -->
+     <button id="entertainmentButton">Entertainment</button>
+     <!-- Container to display additional text -->
+     <div id="entertainmentContainer"></div>
 
 <script>
 
@@ -56,7 +63,20 @@ document.getElementById("foodButton").addEventListener("click", function() {
             // Append the paragraph to the text container
             textContainer.appendChild(newParagraph);
         });
-
+// ENT Function to handle the click event of the button
+document.getElementById("entertainmentButton").addEventListener("click", function() {
+            // Get the text container element
+            var textContainer = document.getElementById("entertainmentContainer");
+            
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+            
+            // Add text content to the paragraph
+            newParagraph.textContent = "If you're visiting at the right time, you can see some great things! Swing by Bridgestone Arena for a Predators hockey game- odds are you'll see a country star while you're there! If not, check Nissan Stadium for a Tennessee Titans football game! And if you're lucky enough, a musical might be in store for you at the Tennessee Performing Arts Center, TPAC! ";
+            
+            // Append the paragraph to the text container
+            textContainer.appendChild(newParagraph);
+        });
 
 
 </script>
