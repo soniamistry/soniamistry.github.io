@@ -38,11 +38,14 @@
            countobj = document.getElementById("count");
            console.log("Updating i: " + i);
            countobj.innerHTML = "<b>" + i + "</b>";
-
+        function updateCount (){
+            i=i-1
+            document.body.style.backgroundColor = '+10';
+        }
 
            if (i <= 0) { // double "==" is equality comparison
                document.body.style.backgroundColor ="#FF4F6E";
-               countobj.innerHTML = "<b><font size='+5'><font color='FFC0CB'>HAPPY BIRTHDAY!</b>";
+               countobj.innerHTML = "<b><font size='+6'><font color='FFC0CB'>HAPPY BIRTHDAY!</b>";
            }
        }
     </script>
