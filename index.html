@@ -15,9 +15,34 @@ Here are some of my favorite spots in the, <b>coolest city ever
   <center> 
     <a href="https://soniamistry.github.io/bestplaces.html">   <font color="#FFFFFF">Click here to learn more!!</a>
   </center> 
+
+  <!-- Button to trigger the addition of text -->
+  <button id="musicButton">Music</button>
     
+  <!-- Container to display additional text -->
+  <div id="musicContainer"></div>
+
+<script>
+
+// Function to handle the click event of the button
+document.getElementById("musicButton").addEventListener("click", function() {
+            // Get the text container element
+            var textContainer = document.getElementById("musicContainer");
+            
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+            
+            // Add text content to the paragraph
+            newParagraph.textContent = "There's live music at essentially every restaurant! For something more formal, like concerts, try the Grand Ole Opry or the Ryman Auditorium";
+            
+            // Append the paragraph to the text container
+            textContainer.appendChild(newParagraph);
+        });
+
+
+
+
+</script>
 </body>  
-
-
 </html>
 
